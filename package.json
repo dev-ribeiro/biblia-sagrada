@@ -1,6 +1,7 @@
 {
   "name": "biblia-sagrada",
   "version": "0.0.1",
+  "type": "module",
   "description": "Lib javascript que disponibiliza a bíblia sagrada em formato JSON e em diferentes versões.",
   "main": "src/index.js",
   "scripts": {
