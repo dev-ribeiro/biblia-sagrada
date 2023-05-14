@@ -1,4 +1,4 @@
-# Bíblia sagrada JSON
+# Bíblia sagrada JS
 
 ## Descrição
 
@@ -12,7 +12,7 @@ Lib que cria uma Bíblia Sagrada em diferentes versões
 
 ```ts
 
-import { createBiblieInstance } from 'biblia-sagrada-json';
+import { createBiblieInstance } from 'biblia-sagrada-js';
 
 const biblie = createBiblieInstance('nvi');
 
