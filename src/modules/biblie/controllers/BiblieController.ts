@@ -2,7 +2,7 @@ import { BibileVersion } from '../../../@types/biblies.js';
 import { Biblie } from '../models/Biblie.js';
 
 export class BiblieController {
-    controlledBiblie;
+    private controlledBiblie;
 
     constructor(version: BibileVersion) {
         this.controlledBiblie = new Biblie(version);
