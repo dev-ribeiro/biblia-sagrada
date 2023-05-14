@@ -1,9 +1,10 @@
+import { BibileVersion } from '../../../@types/biblies.js';
 import { Biblie } from '../models/Biblie.js';
 
 export class BiblieController {
     controlledBiblie;
 
-    constructor(version) {
+    constructor(version: BibileVersion) {
         this.controlledBiblie = new Biblie(version);
     }
 
@@ -11,7 +12,7 @@ export class BiblieController {
         return this.controlledBiblie.getAllVerses();
     }
 
-    getChapter(book, chapter) {
+    getChapter(book: string, chapter: number) {
         return this.controlledBiblie.getChapter(book, chapter);
     }
 }
