@@ -24,7 +24,7 @@ const biblie = createBiblieInstance('nvi');
 
 const biblie = createBiblieInstance('nvi');
 
-biblie.getChapter();
+biblie.getChapter('Êxodo', 2);
 
 ```
 
