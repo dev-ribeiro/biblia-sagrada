@@ -1,7 +1,7 @@
-import { BibleVersion } from '../../../@types/biblies';
-import nvi from '../../../assets/pt-br/nvi.json';
-import aa from '../../../assets/pt-br/aa.json';
-import acf from '../../../assets/pt-br/acf.json';
+import { BibleVersion } from '../@types/biblies';
+import nvi from '../assets/pt-br/nvi.json';
+import aa from '../assets/pt-br/aa.json';
+import acf from '../assets/pt-br/acf.json';
 
 export function getBibleByVersion(version: BibleVersion): any[] {
     switch (version) {

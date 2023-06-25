@@ -1,6 +1,6 @@
 import { BibleVersion, BibleType, IBibleType, Books } from '../../../@types/biblies.js';
 import { CustomError } from '../../../utils/CustomError.js';
-import { getBibleByVersion } from '../service/getBibleByVersion.js';
+import { getBibleByVersion } from '../../../utils/getBibleByVersion.js';
 
 
 export class Bible implements IBibleType {
