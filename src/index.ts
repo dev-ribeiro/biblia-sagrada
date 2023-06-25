@@ -1,6 +1,6 @@
-import { BibileVersion } from './@types/biblies.js';
-import { BiblieController } from './modules/biblie/controllers/BiblieController.js';
+import { BibleVersion } from './@types/biblies.js';
+import { BibleController } from './modules/bible/controllers/BibleController.js';
 
-export function createBiblieInstance(version: BibileVersion) {
-    return new BiblieController(version);
+export function createBibleInstance(version: BibleVersion) {
+    return new BibleController(version);
 }

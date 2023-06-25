@@ -1,11 +1,12 @@
-import { BibileVersion, BiblieType, IBiblieType } from '../../../@types/biblies.js';
-import { getBiblieByVersion } from '../service/getBiblieByVersion.js';
+import { BibileVersion, BibleType, IBibleType } from '../../../@types/biblies.js';
+import { getBibleByVersion } from '../service/getBibleByVersion.js';
 
-export class Biblie implements IBiblieType {
-    biblie: BiblieType[];
+
+export class Bible implements IBibleType {
+    biblie: BibleType[];
 
     constructor(version: BibileVersion) {
-        const selectedBiblie = getBiblieByVersion(version);
+        const selectedBiblie = getBibleByVersion(version);
         this.biblie = selectedBiblie;
     }
 

@@ -1,12 +1,12 @@
-export type BibileVersion = "nvi" | "aa" | "acf"
+export type BibleVersion = "nvi" | "aa" | "acf"
 
-export interface BiblieType {
+export interface BibleType {
     name: string;
     chapters: string[];
 }
 
-export interface IBiblieType {
-    biblie: BiblieType[];
+export interface IBibleType {
+    biblie: BibleType[];
     getAllVerses: () => any;
     getChapter: (param: string, chapter: number) => any;
 }
