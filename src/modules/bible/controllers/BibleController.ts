@@ -18,12 +18,13 @@ export class BibleController {
     try {
       return this.controlledBible.getChapter(book, chapter);
     } catch (error) {
-      if(error instanceof CustomError) {
+      if (error instanceof CustomError) {
         console.error(error.message)
-        return;
+      } else {
+        console.error(error)
       }
 
-      console.error(error)
+      return null
     }
   }
 }
