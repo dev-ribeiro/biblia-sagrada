@@ -12,9 +12,9 @@ Lib que cria uma Bíblia Sagrada em diferentes versões
 
 ```ts
 
-import { createBiblieInstance } from 'biblia-sagrada-js';
+import { createBibleInstance } from 'biblia-sagrada-js';
 
-const biblie = createBiblieInstance('nvi');
+const bible = createBibleInstance('nvi');
 
 ```
 
@@ -22,9 +22,9 @@ const biblie = createBiblieInstance('nvi');
 
 ```ts
 
-const biblie = createBiblieInstance('nvi');
+const bible = createBiblieInstance('nvi');
 
-biblie.getChapter('Êxodo', 2);
+bible.getChapter('Êxodo', 2);
 
 ```
 
