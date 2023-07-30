@@ -14,7 +14,7 @@ export type Books =
 
 export interface BibleType {
   name: string;
-  chapters: string[];
+  chapters: string[][];
 }
 
 export interface IBibleType {

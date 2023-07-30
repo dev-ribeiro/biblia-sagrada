@@ -1,10 +1,10 @@
-import { createBibleInstance } from '../'
+import { createBibleInstance } from '..'
 import { describe, it, expect } from 'vitest'
 
 describe('Bible suit', () => {
   it('should be get a chapter', () => {
     const bible = createBibleInstance('nvi')
-    const chapter = bible.getChapter('Atos', 2)
+    const chapter = bible.getChapter('Obadias', 1)
 
     expect(chapter).toBeDefined()
 
