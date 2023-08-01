@@ -16,6 +16,10 @@ export class Bible implements IBibleType {
     return this.#biblie;
   }
 
+  getBook(bookName:Books): BibleType {
+    return this.#biblie.find(book => book.name === bookName)!;
+  }
+
   getChapter(name: Books, chapter: number) {
     try {
       const book = this.#biblie.find(book => book.name === name);
