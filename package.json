@@ -1,6 +1,6 @@
 {
   "name": "biblia-sagrada-js",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "Lib javascript que disponibiliza a bíblia sagrada em formato JSON e em diferentes versões.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,6 +10,10 @@
   },
   "author": "David Ribeiro",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dev-ribeiro/biblia-sagrada-js.git"
+  },
   "devDependencies": {
     "typescript": "^5.0.4",
     "vitest": "^0.32.2"

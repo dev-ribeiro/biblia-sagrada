@@ -16,7 +16,7 @@ export class Bible implements IBibleType {
     return this.#biblie;
   }
 
-  getBook(bookName:Books): BibleType {
+  getBook(bookName: Books): BibleType {
     return this.#biblie.find(book => book.name === bookName)!;
   }
 
@@ -25,7 +25,7 @@ export class Bible implements IBibleType {
       const book = this.#biblie.find(book => book.name === name);
       const selectedChapter = book!.chapters[chapter - 1];
 
-      if(!selectedChapter) throw new CustomError('Chapter not found')
+      if (!selectedChapter) throw new CustomError('Chapter not found')
 
       return selectedChapter;
     } catch (error) {
@@ -35,6 +35,10 @@ export class Bible implements IBibleType {
   }
 
   getRandomChapter() {
-    return randomChapter(this.#biblie)
+    try {
+      return randomChapter(this.#biblie)
+    } catch (error) {
+      throw error
+    }
   }
 }

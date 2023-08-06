@@ -19,6 +19,14 @@ describe('Bible suit', () => {
 
   })
 
+  it('should be get a random chapter', () => {
+    const bible = createBibleInstance('nvi');
+
+    const randomChapter = bible.getRandomChapter()
+
+    expect(randomChapter).toBeDefined();
+  })
+
   it('should be not get a chapter if not exists', () => {
     const bible = createBibleInstance('nvi')
     const chapter = bible.getChapter('Atos', 50)

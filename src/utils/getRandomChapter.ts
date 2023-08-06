@@ -1,17 +1,29 @@
 import { BibleType } from "../@types/bible";
 
 export function randomChapter(bible: BibleType[]) {
-  const chapterKey = bible.map(chapter => chapter.name)
-  const randomBook = chapterKey[~~(Math.random() * chapterKey.length)]
-  const selectedBook = bible.find(item => item.name === randomBook)
+  try {
+    const chapterKey = bible.map(chapter => chapter.name)
 
-  const randomChapter = ~~(Math.random() * selectedBook!.chapters.length)
+    const randomBook = chapterKey[Math.floor(Math.random() * chapterKey.length)]
 
-  const verses = selectedBook!.chapters[randomChapter - 1]
+    if(!randomBook) throw new Error()
 
-  return {
-    book: selectedBook!.name,
-    chapter: randomChapter,
-    verses
+    const selectedBook = bible.find(item => item.name === randomBook)
+
+    if(!selectedBook) throw new Error()
+
+    const randomChapter = Math.floor(Math.random() * selectedBook.chapters.length)
+
+    const verses = selectedBook.chapters[randomChapter]
+
+    const selectedRandomChapter = randomChapter + 1;
+
+    return {
+      book: selectedBook.name,
+      chapter: selectedRandomChapter,
+      verses
+    }
+  } catch (error) {
+    throw error
   }
 }
